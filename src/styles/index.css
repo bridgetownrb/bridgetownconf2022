@@ -962,7 +962,8 @@ section.hero > div > p {
 
 section.hero > div > div.form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   margin-top: var(--tw-size-12);
   margin-bottom: var(--tw-size-8);
 }
@@ -980,11 +981,6 @@ section.hero > div > div.form > :not([hidden]) ~ :not([hidden]) {
 }
 
 @media (min-width: 640px) {
-  section.hero > div > div.form {
-    flex-direction: row;
-    justify-content: center;
-  }
-
   section.hero > div > div.form > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(var(--tw-size-0) * calc(1 - var(--tw-space-y-reverse)));
