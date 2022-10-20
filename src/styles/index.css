@@ -1084,3 +1084,15 @@ section > h3 > img {
   display: inline-block;
   margin-inline-end: var(--tw-size-3);
 }
+
+@media (max-width: 399px) {
+  section > h3 > img {
+    width: 60px;
+  }
+}
+
+sl-icon {
+  vertical-align: -.15em;
+  margin-inline: var(--tw-size-0_5) var(--tw-size-1_5);
+  color: rgb(var(--tw-color-sky-400));
+}
