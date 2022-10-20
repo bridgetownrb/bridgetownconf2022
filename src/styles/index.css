@@ -899,6 +899,36 @@ body:has(dialog[open]) {
   filter: blur(8px);
 }
 
+body > header {
+  margin-block-start: 0;
+  margin-inline: 0;
+  position: relative;
+  border-block: 30px solid rgb(var(--tw-color-violet-600));
+  background-color: rgb(var(--tw-color-violet-800));
+  background-image: url(/assets/bridgetown-banner.jpg);
+  background-size: cover;
+  aspect-ratio: 14 / 8;
+  font-family: prometo, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: clamp(3rem, 4vw, 5rem);
+  font-style: italic;
+  font-weight: 900;
+  color: white;
+}
+
+body > header :is(h1, p) {
+  /* Not sure why this must be important */
+  line-height: var(--tw-line-height-none) !important;
+}
+body > header h1 {
+  margin-block-end: 0.15em;
+}
+
+@media (max-width: 767px) {
+  body > header {
+    aspect-ratio: 1 / 1;
+  }
+}
+
 main {
   width: clamp(500px, 75vw, 1200px);
   max-width: 100%;
@@ -934,18 +964,24 @@ section.hero > div {
 main > section :is(h1, h2, h3) {
   margin-bottom: var(--tw-size-10);
   font-size: var(--tw-font-size-4xl);
-  line-height: var(--tw-line-height-10);
   font-weight: var(--tw-font-weight-extrabold);
-  line-height: var(--tw-line-height-none);
+  line-height: var(--tw-line-height-tight);
   --tw-text-opacity: 1;
   color: rgb(var(--tw-color-gray-900) / var(--tw-text-opacity));
+}
+
+main > section h3 {
+  font-size: var(--tw-font-size-3xl);
 }
 
 @media (min-width: 768px) {
   main > section :is(h1, h2) {
     font-size: var(--tw-font-size-5xl);
-    line-height: var(--tw-line-height-none);
   }
+
+  main > section h3 {
+    font-size: var(--tw-font-size-4xl);
+  }  
 }
 
 @media (min-width: 1024px) {
