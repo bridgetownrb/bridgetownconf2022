@@ -457,6 +457,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
     color: rgb(var(--tw-color-gray-900) / 1);
     /* color: inherit; */
     text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
 
   /*
