@@ -928,6 +928,7 @@ body > header h1 {
 @media (max-width: 750px) {
   body > header {
     aspect-ratio: 2 / 3;
+    border-block-width: 20px;
   }
 }
 
@@ -982,7 +983,7 @@ body > header h1 {
 
   #ruby-stack {
     left: calc(50% - 4rem);
-    top: calc(110vw - 15.5rem);
+    top: calc(110vw - 15rem);
     right: unset;
     bottom: unset;
   }
