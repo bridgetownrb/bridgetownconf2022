@@ -944,6 +944,18 @@ body > header h1 {
   left: 6vw;
 }
 
+#site-title > * {
+  text-shadow: clamp(1px, 0.25vw, 3px) clamp(1px, 0.25vw, 3px) clamp(2px, 0.5vw, 5px) var(--site-title-shadow);
+}
+
+#site-title h1 {
+  --site-title-shadow: rgba(0,0,0,0.4);
+}
+
+#site-title p {
+  --site-title-shadow: rgba(0,0,0,0.25);
+}
+
 #ruby-stack {
   position: absolute;
   bottom: calc(.5rem + 1vw);
@@ -962,6 +974,10 @@ body > header h1 {
     right: 0;
     bottom: calc(24vw - 4.5rem);
     font-size: 90%;
+  }
+
+  #site-title h1 {
+    --site-title-shadow: rgba(0,0,0,0.6);
   }
 
   #ruby-stack {
