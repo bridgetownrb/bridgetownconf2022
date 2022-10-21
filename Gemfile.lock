@@ -1,15 +1,23 @@
-GIT
-  remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: 5fbd1ebfa0b3dd2d181a3850b1a83bf4f7619ab2
-  branch: add-dotenv-server-configs
+GEM
+  remote: https://rubygems.org/
   specs:
-    bridgetown (1.1.0)
-      bridgetown-builder (= 1.1.0)
-      bridgetown-core (= 1.1.0)
-      bridgetown-paginate (= 1.1.0)
-    bridgetown-builder (1.1.0)
-      bridgetown-core (= 1.1.0)
-    bridgetown-core (1.1.0)
+    activemodel (7.0.4)
+      activesupport (= 7.0.4)
+    activesupport (7.0.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    amazing_print (1.4.0)
+    bridgetown (1.2.0.beta3)
+      bridgetown-builder (= 1.2.0.beta3)
+      bridgetown-core (= 1.2.0.beta3)
+      bridgetown-paginate (= 1.2.0.beta3)
+    bridgetown-builder (1.2.0.beta3)
+      bridgetown-core (= 1.2.0.beta3)
+    bridgetown-core (1.2.0.beta3)
       activemodel (>= 6.0, < 8.0)
       activesupport (>= 6.0, < 8.0)
       addressable (~> 2.4)
@@ -33,25 +41,8 @@ GIT
       tilt (~> 2.0)
       webrick (~> 1.7)
       zeitwerk (~> 2.5)
-    bridgetown-paginate (1.1.0)
-      bridgetown-core (= 1.1.0)
-    bridgetown-routes (1.1.0)
-      bridgetown-core (= 1.1.0)
-      roda-route_list (>= 2.1)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    activemodel (7.0.3.1)
-      activesupport (= 7.0.3.1)
-    activesupport (7.0.3.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-    addressable (2.8.1)
-      public_suffix (>= 2.0.2, < 6.0)
-    amazing_print (1.4.0)
+    bridgetown-paginate (1.2.0.beta3)
+      bridgetown-core (= 1.2.0.beta3)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
     dotenv (2.8.1)
@@ -106,10 +97,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    roda (3.59.0)
+    roda (3.61.0)
       rack
-    roda-route_list (2.1.0)
-      roda
     rouge (3.30.0)
     ruby2_keywords (0.0.5)
     serbea (1.0.1)
@@ -124,17 +113,13 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     webrick (1.7.0)
-    zeitwerk (2.6.0)
+    zeitwerk (2.6.1)
 
 PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  bridgetown!
-  bridgetown-builder!
-  bridgetown-core!
-  bridgetown-paginate!
-  bridgetown-routes!
+  bridgetown (~> 1.2.0.beta3)
   dotenv (~> 2.8)
   puma (~> 5.2)
 
