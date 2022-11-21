@@ -1157,3 +1157,11 @@ sl-icon {
   margin-inline: var(--tw-size-0_5) var(--tw-size-1_5);
   color: rgb(var(--tw-color-sky-400));
 }
+
+responsive-video {
+  display: block;
+  position: relative;
+  padding-block-start: 56.25%;
+  margin-block-end: var(--tw-size-10);
+  box-shadow: 0px 10px 20px #00000044;
+}
